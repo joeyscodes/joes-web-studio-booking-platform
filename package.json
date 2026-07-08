@@ -1,0 +1,14 @@
+{
+  "name": "joes-web-studio-booking",
+  "version": "1.0.0",
+  "description": "Foundation for Joe's Web Studio multi-tenant booking API on Cloudflare Workers.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

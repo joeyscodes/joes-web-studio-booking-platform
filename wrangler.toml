@@ -1,0 +1,21 @@
+# Joe's Web Studio Booking Platform
+#
+# File:
+# wrangler.toml
+#
+# Responsibility:
+# Cloudflare Worker configuration (entry point, compatibility date, bindings).
+#
+# Author:
+# Joe's Web Studio
+#
+# Version:
+# 1.0.0
+
+name = "joes-web-studio-booking"
+main = "index.js"
+compatibility_date = "2026-07-07"
+
+# No bindings (KV, D1, R2, secrets) are configured yet.
+# This is a foundation-only deployment — add bindings here as
+# persistence, auth, or notifications are introduced later.
