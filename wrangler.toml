@@ -1,0 +1,31 @@
+# Joe's Web Studio Booking Platform
+#
+# File:
+# wrangler.toml
+#
+# Responsibility:
+# Cloudflare Worker configuration (entry point, compatibility date, bindings).
+#
+# Author:
+# Joe's Web Studio
+#
+# Version:
+# 1.0.0
+
+name = "joes-web-studio-booking"
+main = "index.js"
+compatibility_date = "2026-07-07"
+
+# RESEND_API_KEY is NOT set here — it's a secret, stored via
+# `wrangler secret put RESEND_API_KEY` (or the Cloudflare dashboard), never
+# committed to source control.
+#
+# EMAIL_FROM is the single source of truth for the outgoing sender address.
+# emailService.js reads it from `env.EMAIL_FROM` and does not hardcode a
+# sender anywhere. To go live with a verified domain, change ONLY the value
+# below (e.g. to "bookings@joeswebstudio.com") — no code changes required.
+[vars]
+EMAIL_FROM = "onboarding@resend.dev"
+
+# No other bindings (KV, D1, R2) are configured yet.
+# Add them here as persistence or other features are introduced later.
