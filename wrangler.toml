@@ -12,7 +12,7 @@
 # Version:
 # 1.0.0
 
-name = "joes-web-studio-booking"
+name = "joes-web-studio-booking-platform"
 main = "index.js"
 compatibility_date = "2026-07-07"
 
